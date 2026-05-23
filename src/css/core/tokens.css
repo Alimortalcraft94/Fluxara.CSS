@@ -1,0 +1,74 @@
+@layer fluxara.tokens {
+  :where(:root, [data-fx-theme="aurora"]) {
+    color-scheme: light;
+    --fx-font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --fx-font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+    --fx-step--2: 0.75rem;
+    --fx-step--1: 0.875rem;
+    --fx-step-0: 1rem;
+    --fx-step-1: 1.125rem;
+    --fx-step-2: 1.375rem;
+    --fx-step-3: 1.75rem;
+    --fx-step-4: 2.25rem;
+    --fx-step-5: 3rem;
+
+    --fx-space-0: 0;
+    --fx-space-1: 0.25rem;
+    --fx-space-2: 0.5rem;
+    --fx-space-3: 0.75rem;
+    --fx-space-4: 1rem;
+    --fx-space-5: 1.25rem;
+    --fx-space-6: 1.5rem;
+    --fx-space-7: 2rem;
+    --fx-space-8: 2.5rem;
+    --fx-space-9: 3rem;
+    --fx-space-10: 4rem;
+    --fx-space-11: 5rem;
+    --fx-space-12: 6rem;
+
+    --fx-radius-0: 0;
+    --fx-radius-1: 0.25rem;
+    --fx-radius-2: 0.5rem;
+    --fx-radius-3: 0.75rem;
+    --fx-radius-4: 1rem;
+    --fx-radius-pill: 999rem;
+
+    --fx-canvas: #fbfcff;
+    --fx-surface: #ffffff;
+    --fx-surface-2: #eef3f8;
+    --fx-ink: #14171f;
+    --fx-muted: #5b6575;
+    --fx-line: #d8e0ea;
+    --fx-brand: #0f7c80;
+    --fx-brand-ink: #f4ffff;
+    --fx-accent: #b62f5c;
+    --fx-accent-ink: #fff7fb;
+    --fx-warn: #a96300;
+    --fx-danger: #bd2036;
+    --fx-success: #167a45;
+
+    --fx-shadow-1: 0 1px 2px rgb(20 23 31 / 0.08), 0 1px 1px rgb(20 23 31 / 0.05);
+    --fx-shadow-2: 0 10px 25px rgb(20 23 31 / 0.12);
+    --fx-shadow-3: 0 20px 55px rgb(20 23 31 / 0.18);
+    --fx-ring: 0 0 0 3px color-mix(in srgb, var(--fx-brand), transparent 70%);
+    --fx-ease: cubic-bezier(0.2, 0, 0, 1);
+    --fx-fast: 140ms;
+    --fx-normal: 220ms;
+    --fx-measure: 68ch;
+  }
+
+  [data-fx-theme="midnight"] {
+    color-scheme: dark;
+    --fx-canvas: #101216;
+    --fx-surface: #171b22;
+    --fx-surface-2: #222936;
+    --fx-ink: #f5f7fb;
+    --fx-muted: #aab4c3;
+    --fx-line: #323b4a;
+    --fx-brand: #55d0c7;
+    --fx-brand-ink: #061616;
+    --fx-accent: #ff7aa8;
+    --fx-accent-ink: #2d0614;
+  }
+}

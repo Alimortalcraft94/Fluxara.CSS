@@ -1,0 +1,62 @@
+@layer fluxara.recipes {
+  .fx\:recipe\:button {
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: var(--fx-radius-2);
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 600;
+    gap: var(--fx-space-2);
+    justify-content: center;
+    min-block-size: 2.5rem;
+    padding-block: var(--fx-space-2);
+    padding-inline: var(--fx-space-4);
+    transition: transform var(--fx-fast) var(--fx-ease), filter var(--fx-fast) var(--fx-ease);
+  }
+
+  .fx\:recipe\:button:hover { filter: brightness(1.04); }
+  .fx\:recipe\:button:active { transform: translateY(1px); }
+
+  .fx\:recipe\:panel {
+    background: var(--fx-surface);
+    border: 1px solid var(--fx-line);
+    border-radius: var(--fx-radius-3);
+    box-shadow: var(--fx-shadow-1);
+  }
+
+  .fx\:recipe\:cluster {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--fx-gap, var(--fx-space-3));
+  }
+
+  .fx\:recipe\:switch {
+    --fx-switch-size: 1.25rem;
+    align-items: center;
+    background: var(--fx-surface-2);
+    border: 1px solid var(--fx-line);
+    border-radius: var(--fx-radius-pill);
+    display: inline-flex;
+    inline-size: calc(var(--fx-switch-size) * 2);
+    padding: 0.125rem;
+  }
+
+  .fx\:recipe\:switch::before {
+    aspect-ratio: 1;
+    background: var(--fx-surface);
+    border-radius: inherit;
+    box-shadow: var(--fx-shadow-1);
+    content: "";
+    inline-size: var(--fx-switch-size);
+    transition: transform var(--fx-fast) var(--fx-ease);
+  }
+
+  .fx\:recipe\:switch[aria-checked="true"] {
+    background: var(--fx-brand);
+  }
+
+  .fx\:recipe\:switch[aria-checked="true"]::before {
+    transform: translateX(calc(var(--fx-switch-size) - 0.25rem));
+  }
+}

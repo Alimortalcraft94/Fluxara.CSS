@@ -1,0 +1,19 @@
+@layer fluxara.base {
+  :where(body) {
+    background: var(--fx-canvas);
+    color: var(--fx-ink);
+    font-family: var(--fx-font-sans);
+    font-size: var(--fx-step-0);
+    line-height: 1.5;
+  }
+
+  :where(a) {
+    color: var(--fx-brand);
+    text-underline-offset: 0.18em;
+  }
+
+  :where(:focus-visible) {
+    outline: 0;
+    box-shadow: var(--fx-ring);
+  }
+}

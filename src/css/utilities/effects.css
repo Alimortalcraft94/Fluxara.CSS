@@ -1,0 +1,16 @@
+@layer fluxara.utilities {
+  .fx\:radius\:0 { border-radius: var(--fx-radius-0); }
+  .fx\:radius\:1 { border-radius: var(--fx-radius-1); }
+  .fx\:radius\:2 { border-radius: var(--fx-radius-2); }
+  .fx\:radius\:3 { border-radius: var(--fx-radius-3); }
+  .fx\:radius\:4 { border-radius: var(--fx-radius-4); }
+  .fx\:radius\:pill { border-radius: var(--fx-radius-pill); }
+  .fx\:shadow\:1 { box-shadow: var(--fx-shadow-1); }
+  .fx\:shadow\:2 { box-shadow: var(--fx-shadow-2); }
+  .fx\:shadow\:3 { box-shadow: var(--fx-shadow-3); }
+  .fx\:ring { box-shadow: var(--fx-ring); }
+  .fx\:blur\:backdrop { backdrop-filter: blur(var(--fx-blur, 14px)); }
+  .fx\:opacity\:0 { opacity: 0; }
+  .fx\:opacity\:50 { opacity: 0.5; }
+  .fx\:opacity\:100 { opacity: 1; }
+}

@@ -1,0 +1,10 @@
+@layer fluxara.layout {
+  .fx\:clip { overflow: clip; }
+  .fx\:scroll { overflow: auto; }
+  .fx\:scroll\:x { overflow-x: auto; }
+  .fx\:scroll\:y { overflow-y: auto; }
+  .fx\:overscroll\:contain { overscroll-behavior: contain; }
+  .fx\:snap\:x { scroll-snap-type: x mandatory; }
+  .fx\:snap\:y { scroll-snap-type: y mandatory; }
+  .fx\:snap\:start { scroll-snap-align: start; }
+}

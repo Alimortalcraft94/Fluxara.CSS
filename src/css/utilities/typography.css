@@ -1,0 +1,25 @@
+@layer fluxara.utilities {
+  .fx\:font\:sans { font-family: var(--fx-font-sans); }
+  .fx\:font\:mono { font-family: var(--fx-font-mono); }
+  .fx\:text\:xs { font-size: var(--fx-step--2); }
+  .fx\:text\:sm { font-size: var(--fx-step--1); }
+  .fx\:text\:base { font-size: var(--fx-step-0); }
+  .fx\:text\:lg { font-size: var(--fx-step-1); }
+  .fx\:text\:xl { font-size: var(--fx-step-2); }
+  .fx\:text\:2xl { font-size: var(--fx-step-3); line-height: 1.15; }
+  .fx\:text\:3xl { font-size: var(--fx-step-4); line-height: 1.1; }
+  .fx\:text\:4xl { font-size: var(--fx-step-5); line-height: 1.05; }
+  .fx\:weight\:400 { font-weight: 400; }
+  .fx\:weight\:500 { font-weight: 500; }
+  .fx\:weight\:600 { font-weight: 600; }
+  .fx\:weight\:700 { font-weight: 700; }
+  .fx\:leading\:tight { line-height: 1.1; }
+  .fx\:leading\:normal { line-height: 1.5; }
+  .fx\:leading\:loose { line-height: 1.75; }
+  .fx\:align\:start { text-align: start; }
+  .fx\:align\:center { text-align: center; }
+  .fx\:align\:end { text-align: end; }
+  .fx\:balance { text-wrap: balance; }
+  .fx\:pretty { text-wrap: pretty; }
+  .fx\:truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+}

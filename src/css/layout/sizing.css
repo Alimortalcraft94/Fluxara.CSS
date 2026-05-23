@@ -1,0 +1,16 @@
+@layer fluxara.layout {
+  .fx\:w\:full { inline-size: 100%; }
+  .fx\:w\:screen { inline-size: 100vi; }
+  .fx\:w\:fit { inline-size: fit-content; }
+  .fx\:w\:max { inline-size: max-content; }
+  .fx\:w\:\$ { inline-size: var(--fx-w); }
+  .fx\:h\:full { block-size: 100%; }
+  .fx\:h\:screen { min-block-size: 100vb; }
+  .fx\:h\:\$ { block-size: var(--fx-h); }
+  .fx\:min\:0 { min-inline-size: 0; min-block-size: 0; }
+  .fx\:measure { max-inline-size: var(--fx-measure); }
+  .fx\:container { inline-size: min(100% - (2 * var(--fx-space-4)), var(--fx-container, 72rem)); margin-inline: auto; }
+  .fx\:ratio\:square { aspect-ratio: 1; }
+  .fx\:ratio\:video { aspect-ratio: 16 / 9; }
+  .fx\:ratio\:\$ { aspect-ratio: var(--fx-ratio); }
+}

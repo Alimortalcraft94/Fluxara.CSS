@@ -1,0 +1,52 @@
+{
+  "name": "fluxara",
+  "version": "0.1.0",
+  "description": "A CSS-first utility framework with semantic tokens, cascade layers, and a tiny JavaScript toolchain.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Fluxara Contributors",
+  "style": "./dist/fluxara.css",
+  "types": "./src/js/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": [
+    "*.css",
+    "dist/*.css"
+  ],
+  "files": [
+    "bin",
+    "dist",
+    "examples",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "css",
+    "utility-first",
+    "design-system",
+    "framework",
+    "fluxara"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/js/index.d.ts",
+      "import": "./src/js/index.js"
+    },
+    "./css": "./dist/fluxara.css",
+    "./css/source": "./src/css/fluxara.css",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "fluxara": "./bin/fluxara.mjs"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "prepack": "npm run build && npm run check"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

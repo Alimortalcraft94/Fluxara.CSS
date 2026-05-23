@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" data-fx-theme="aurora">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fluxara Example</title>
+    <link rel="stylesheet" href="../dist/fluxara.css">
+  </head>
+  <body>
+    <main class="fx:container fx:p:6 fx:stack:6">
+      <header class="fx:stack:3 fx:measure">
+        <p class="fx:m:0 fx:fg:brand fx:weight:700">Fluxara</p>
+        <h1 class="fx:m:0 fx:text:4xl fx:balance">CSS-first utilities with semantic tokens.</h1>
+        <p class="fx:m:0 fx:fg:muted fx:text:lg">A different syntax, a layered architecture, and a small JS surface for configuration and themes.</p>
+      </header>
+
+      <section class="fx:grid fx:grid:cols:1 fx:md:grid:cols:3 fx:gap:4">
+        <article class="fx:recipe:panel fx:p:5 fx:stack:3">
+          <h2 class="fx:m:0 fx:text:xl">Tokens</h2>
+          <p class="fx:m:0 fx:fg:muted">Theme with CSS variables and data attributes.</p>
+        </article>
+        <article class="fx:recipe:panel fx:p:5 fx:stack:3">
+          <h2 class="fx:m:0 fx:text:xl">Layout</h2>
+          <p class="fx:m:0 fx:fg:muted">Logical properties, grids, containers, and scroll helpers.</p>
+        </article>
+        <article class="fx:recipe:panel fx:p:5 fx:stack:3">
+          <h2 class="fx:m:0 fx:text:xl">Variants</h2>
+          <p class="fx:m:0 fx:fg:muted">Responsive, state, focus, hover, dark, and container helpers.</p>
+        </article>
+      </section>
+
+      <button class="fx:recipe:button fx:bg:brand fx:fg:brand-ink fx:hover:lift" type="button">
+        Try Fluxara
+      </button>
+    </main>
+  </body>
+</html>

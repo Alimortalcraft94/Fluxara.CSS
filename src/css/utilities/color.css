@@ -1,0 +1,19 @@
+@layer fluxara.utilities {
+  .fx\:bg\:canvas { background: var(--fx-canvas); }
+  .fx\:bg\:surface { background: var(--fx-surface); }
+  .fx\:bg\:surface-2 { background: var(--fx-surface-2); }
+  .fx\:bg\:brand { background: var(--fx-brand); }
+  .fx\:bg\:accent { background: var(--fx-accent); }
+  .fx\:bg\:\$ { background: var(--fx-bg); }
+  .fx\:fg\:ink { color: var(--fx-ink); }
+  .fx\:fg\:muted { color: var(--fx-muted); }
+  .fx\:fg\:brand { color: var(--fx-brand); }
+  .fx\:fg\:brand-ink { color: var(--fx-brand-ink); }
+  .fx\:fg\:accent { color: var(--fx-accent); }
+  .fx\:fg\:accent-ink { color: var(--fx-accent-ink); }
+  .fx\:fg\:\$ { color: var(--fx-fg); }
+  .fx\:border { border: 1px solid var(--fx-line); }
+  .fx\:border\:brand { border-color: var(--fx-brand); }
+  .fx\:border\:\$ { border-color: var(--fx-border); }
+  .fx\:divide\:y > * + * { border-block-start: 1px solid var(--fx-line); }
+}

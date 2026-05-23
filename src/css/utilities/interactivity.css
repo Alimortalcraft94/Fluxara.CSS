@@ -1,0 +1,14 @@
+@layer fluxara.utilities {
+  .fx\:cursor\:pointer { cursor: pointer; }
+  .fx\:cursor\:disabled { cursor: not-allowed; }
+  .fx\:select\:none { user-select: none; }
+  .fx\:events\:none { pointer-events: none; }
+  .fx\:touch\:pan-x { touch-action: pan-x; }
+  .fx\:touch\:pan-y { touch-action: pan-y; }
+  .fx\:accent\:brand { accent-color: var(--fx-brand); }
+  .fx\:disabled,
+  :disabled.fx\:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+  }
+}

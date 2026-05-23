@@ -1,0 +1,16 @@
+@layer fluxara.layout {
+  .fx\:relative { position: relative; }
+  .fx\:absolute { position: absolute; }
+  .fx\:fixed { position: fixed; }
+  .fx\:sticky { position: sticky; }
+  .fx\:inset\:0 { inset: 0; }
+  .fx\:inset\:\$ { inset: var(--fx-inset); }
+  .fx\:top\:0 { inset-block-start: 0; }
+  .fx\:bottom\:0 { inset-block-end: 0; }
+  .fx\:start\:0 { inset-inline-start: 0; }
+  .fx\:end\:0 { inset-inline-end: 0; }
+  .fx\:z\:0 { z-index: 0; }
+  .fx\:z\:1 { z-index: 1; }
+  .fx\:z\:10 { z-index: 10; }
+  .fx\:z\:top { z-index: 2147483647; }
+}

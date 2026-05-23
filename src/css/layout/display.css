@@ -1,0 +1,23 @@
+@layer fluxara.layout {
+  .fx\:block { display: block; }
+  .fx\:inline { display: inline-flex; }
+  .fx\:flex { display: flex; }
+  .fx\:grid { display: grid; }
+  .fx\:contents { display: contents; }
+  .fx\:hidden { display: none; }
+
+  .fx\:row { flex-direction: row; }
+  .fx\:col { flex-direction: column; }
+  .fx\:wrap { flex-wrap: wrap; }
+  .fx\:nowrap { flex-wrap: nowrap; }
+
+  .fx\:items\:start { align-items: start; }
+  .fx\:items\:center { align-items: center; }
+  .fx\:items\:end { align-items: end; }
+  .fx\:items\:stretch { align-items: stretch; }
+  .fx\:justify\:start { justify-content: start; }
+  .fx\:justify\:center { justify-content: center; }
+  .fx\:justify\:end { justify-content: end; }
+  .fx\:justify\:between { justify-content: space-between; }
+  .fx\:place\:center { place-items: center; }
+}

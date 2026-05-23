@@ -1,0 +1,24 @@
+@layer fluxara.utilities {
+  .fx\:transition { transition-duration: var(--fx-normal); transition-timing-function: var(--fx-ease); }
+  .fx\:transition\:fast { transition-duration: var(--fx-fast); transition-timing-function: var(--fx-ease); }
+  .fx\:animate\:fade-in { animation: fx-fade-in var(--fx-normal) var(--fx-ease) both; }
+  .fx\:animate\:rise-in { animation: fx-rise-in 360ms var(--fx-ease) both; }
+
+  @keyframes fx-fade-in {
+    from { opacity: 0; }
+  }
+
+  @keyframes fx-rise-in {
+    from { opacity: 0; transform: translateY(0.5rem); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fx\:transition,
+    .fx\:transition\:fast,
+    .fx\:animate\:fade-in,
+    .fx\:animate\:rise-in {
+      animation-duration: 1ms;
+      transition-duration: 1ms;
+    }
+  }
+}

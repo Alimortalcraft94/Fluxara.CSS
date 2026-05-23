@@ -1,0 +1,45 @@
+@layer fluxara.utilities {
+  .fx\:gap\:0 { gap: var(--fx-space-0); }
+  .fx\:gap\:1 { gap: var(--fx-space-1); }
+  .fx\:gap\:2 { gap: var(--fx-space-2); }
+  .fx\:gap\:3 { gap: var(--fx-space-3); }
+  .fx\:gap\:4 { gap: var(--fx-space-4); }
+  .fx\:gap\:5 { gap: var(--fx-space-5); }
+  .fx\:gap\:6 { gap: var(--fx-space-6); }
+  .fx\:gap\:7 { gap: var(--fx-space-7); }
+  .fx\:gap\:8 { gap: var(--fx-space-8); }
+  .fx\:gap\:\$ { gap: var(--fx-gap); }
+
+  .fx\:p\:0 { padding: var(--fx-space-0); }
+  .fx\:p\:1 { padding: var(--fx-space-1); }
+  .fx\:p\:2 { padding: var(--fx-space-2); }
+  .fx\:p\:3 { padding: var(--fx-space-3); }
+  .fx\:p\:4 { padding: var(--fx-space-4); }
+  .fx\:p\:5 { padding: var(--fx-space-5); }
+  .fx\:p\:6 { padding: var(--fx-space-6); }
+  .fx\:p\:8 { padding: var(--fx-space-8); }
+  .fx\:p\:10 { padding: var(--fx-space-10); }
+  .fx\:p\:\$ { padding: var(--fx-p); }
+
+  .fx\:px\:2 { padding-inline: var(--fx-space-2); }
+  .fx\:px\:3 { padding-inline: var(--fx-space-3); }
+  .fx\:px\:4 { padding-inline: var(--fx-space-4); }
+  .fx\:px\:5 { padding-inline: var(--fx-space-5); }
+  .fx\:px\:6 { padding-inline: var(--fx-space-6); }
+  .fx\:py\:1 { padding-block: var(--fx-space-1); }
+  .fx\:py\:2 { padding-block: var(--fx-space-2); }
+  .fx\:py\:3 { padding-block: var(--fx-space-3); }
+  .fx\:py\:4 { padding-block: var(--fx-space-4); }
+
+  .fx\:m\:0 { margin: var(--fx-space-0); }
+  .fx\:m\:auto { margin: auto; }
+  .fx\:mx\:auto { margin-inline: auto; }
+  .fx\:mt\:4 { margin-block-start: var(--fx-space-4); }
+  .fx\:mt\:6 { margin-block-start: var(--fx-space-6); }
+  .fx\:mb\:4 { margin-block-end: var(--fx-space-4); }
+  .fx\:mb\:6 { margin-block-end: var(--fx-space-6); }
+  .fx\:stack\:2 > * + * { margin-block-start: var(--fx-space-2); }
+  .fx\:stack\:3 > * + * { margin-block-start: var(--fx-space-3); }
+  .fx\:stack\:4 > * + * { margin-block-start: var(--fx-space-4); }
+  .fx\:stack\:6 > * + * { margin-block-start: var(--fx-space-6); }
+}
