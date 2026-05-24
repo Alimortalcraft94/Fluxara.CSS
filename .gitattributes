@@ -1,0 +1,8 @@
+# Force language detection
+*.css linguist-language=CSS
+
+# JS toolchain
+*.js linguist-language=JavaScript
+
+# Docs
+*.md linguist-documentation=true
